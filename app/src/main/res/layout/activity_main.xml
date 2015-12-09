@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.example.staring.demo_myselfview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ResAuto">
+    <!--这里应用的时候注意两点 1.声明myapp 固定的http://schemas.android.com/apk/res/+包名-->
+    <!--这里使用的时候要注意-->
+    <com.example.staring.demo_myselfview.Demo1_mySelfView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        myapp:ButtonSize="18sp"
+        myapp:ButtonText="staring"
+        myapp:TextViewSize="12sp"
+        myapp:TextViewText="burning"></com.example.staring.demo_myselfview.Demo1_mySelfView>
+
+
+    <com.example.staring.demo_myselfview.Demo2_myProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/burning"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:secondaryProgress="50" />
+
+</LinearLayout>
