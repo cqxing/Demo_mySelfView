@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Demo1_mySelfView">
+        <!--这里的声明要记得-->
+        <attr name="TextViewSize" format="dimension"></attr>
+        <attr name="ButtonSize" format="dimension"></attr>
+        <attr name="TextViewText" format="string"></attr>
+        <attr name="ButtonText" format="string"></attr>
+    </declare-styleable>
+</resources>
